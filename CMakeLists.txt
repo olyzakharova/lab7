@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.1)
 project(response_code)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+message(STATUS "Type :  " ${CURL_LIBRARY} )
 
 find_package(CURL REQUIRED)
 include_directories(${CURL_INCLUDE_DIR})
